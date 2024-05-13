@@ -66,6 +66,9 @@
 	  <Compile Update="AutrePage.xaml.cs">
 	    <DependentUpon>AutrePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="GridLayout.xaml.cs">
+	    <DependentUpon>GridLayout.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +76,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="AutrePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Flex.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridLayout.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

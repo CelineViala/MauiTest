@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutoMaui.GridLayout"
+             Title="Grid">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--par defaut si on ne précise pas c'est column 0 et row 0-->
+        <BoxView Color="Green"/>
+        <BoxView Grid.Column="1" Color="Red"/>
+        <BoxView Grid.Row="1" Color="Purple"/>
+        <BoxView Grid.Row="1" Grid.Column="1" Color="Teal"/>
+        <BoxView Grid.Row="2" Grid.ColumnSpan="2" Color="PaleVioletRed"/>
+    </Grid>
+</ContentPage>

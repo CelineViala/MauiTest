@@ -9,7 +9,7 @@
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Test">
             <ShellContent
-        Title="Home"
+        Title="CollView"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
             <ShellContent
@@ -17,9 +17,19 @@
         ContentTemplate="{DataTemplate local:AutrePage}"
         Route="AutrePage" />
             <ShellContent
-        Title="AbsoluteLayout"
+        Title="Abs."
         ContentTemplate="{DataTemplate local:Absolute}"
         Route="Absolute" />
+            <ShellContent
+        Title="Flex"
+        ContentTemplate="{DataTemplate local:Flex}"
+        Route="Flex" />
+            <ShellContent
+        Title="Grid"
+        ContentTemplate="{DataTemplate local:GridLayout}"
+        Route="GridLayout" />
+            
+            
         </Tab>
     </FlyoutItem>
 </Shell>

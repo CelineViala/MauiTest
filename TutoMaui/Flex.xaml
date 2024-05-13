@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutoMaui.Flex"
+             Title="Flex">
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceAround">
+        <!--prend toute la place dispo =>flexlaout.grow=1 (versus 0)-->
+        <Label Text="Test1" FlexLayout.Grow="1"/>
+        <Label Text="Test2"/>
+        <Label Text="Test4"/>
+        <Button Text="Button"/>
+        <BoxView WidthRequest="50" HeightRequest="50" Color="GreenYellow"></BoxView>
+        
+    </FlexLayout>
+</ContentPage>
