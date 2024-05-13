@@ -20,16 +20,17 @@
         Title="Abs."
         ContentTemplate="{DataTemplate local:Absolute}"
         Route="Absolute" />
-            <ShellContent
-        Title="Flex"
-        ContentTemplate="{DataTemplate local:Flex}"
-        Route="Flex" />
-            <ShellContent
-        Title="Grid"
-        ContentTemplate="{DataTemplate local:GridLayout}"
-        Route="GridLayout" />
-            
-            
+            <ShellContent   Title="Flex"
+                            ContentTemplate="{DataTemplate local:Flex}"
+                            Route="Flex" />
+            <ShellContent   Title="Grid"
+                            ContentTemplate="{DataTemplate local:GridLayout}"
+                            Route="GridLayout"/>
+            <ShellContent   Title="Stack"
+                            ContentTemplate="{DataTemplate local:StackLayout}"
+                            Route="StackLaout"/>
+
+
         </Tab>
     </FlyoutItem>
 </Shell>
