@@ -4,7 +4,7 @@
              x:Class="TutoMaui.MainPage">
 
 
-    
+
 
     <CollectionView x:Name="collectionView" ItemsSource="{Binding Contacts}">
         <CollectionView.ItemTemplate>
@@ -15,8 +15,8 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20"></ColumnDefinition>
-                        <ColumnDefinition Width="80"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Rectangle
                         Grid.RowSpan="2"
@@ -27,10 +27,20 @@
                         StrokeThickness="2"
                         Margin="0,0,10,0">
                     </Rectangle>
+                    <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold"
+                    />
+                    <Label Grid.Row="1" 
+                           Grid.Column="1"
+                           Text="{Binding Phone}"
+                           FontAttributes="Italic"
+                           VerticalOptions="End"
+                    />
                 </Grid>
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-    
+
 
 </ContentPage>
