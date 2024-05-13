@@ -30,7 +30,10 @@ namespace TutoMaui
             collectionView.ItemsSource = contacts;
         }
 
-        
+        private void collectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
 }

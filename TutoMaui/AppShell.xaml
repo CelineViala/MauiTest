@@ -6,10 +6,16 @@
     xmlns:local="clr-namespace:TutoMaui"
     Shell.FlyoutBehavior="Disabled"
     Title="TutoMaui">
-
-    <ShellContent
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Test">
+            <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+            <ShellContent
+        Title="Autre"
+        ContentTemplate="{DataTemplate local:AutrePage}"
+        Route="AutrePage" />
+        </Tab>
+    </FlyoutItem>
 </Shell>

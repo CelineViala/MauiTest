@@ -6,10 +6,15 @@
 
 
 
-    <CollectionView x:Name="collectionView" ItemsSource="{Binding Contacts}">
+    <CollectionView 
+        x:Name="collectionView" 
+        ItemsSource="{Binding Contacts}"
+        SelectionMode="Single"
+        SelectionChanged="collectionView_SelectionChanged"
+        >
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10">
+                <Grid Padding="5">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -20,12 +25,12 @@
                     </Grid.ColumnDefinitions>
                     <Rectangle
                         Grid.RowSpan="2"
-                        WidthRequest="60"
-                        HeightRequest="60"
+                        WidthRequest="50"
+                        HeightRequest="50"
                         Fill="OrangeRed"
                         Stroke="DarkRed"
                         StrokeThickness="2"
-                        Margin="0,0,10,0">
+                        Margin="0,0,5,0">
                     </Rectangle>
                     <Label Grid.Column="1"
                            Text="{Binding Name}"
