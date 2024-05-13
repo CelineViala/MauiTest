@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutoMaui.Absolute"
+             Title="Absolute">
+    <AbsoluteLayout  BackgroundColor="Aquamarine" 
+        Margin="10">
+        <!--unite(left, top, width, height)-->
+        <BoxView Color="BlueViolet"
+                 AbsoluteLayout.LayoutBounds="10, 20, 80, 50"/>
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="50, 90, 80, 50"/>
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="100, 150, 180, 150"/>
+        <!--poucentage(left, top, width, height)-->
+        <BoxView Color="HotPink"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds=".5, .5,100,20"/>
+        <Label Text="Texte centré" 
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               AbsoluteLayout.LayoutBounds=".5, .5,100,20"/>
+    </AbsoluteLayout>
+</ContentPage>

@@ -13,9 +13,13 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
             <ShellContent
-        Title="Autre"
+        Title="TableView"
         ContentTemplate="{DataTemplate local:AutrePage}"
         Route="AutrePage" />
+            <ShellContent
+        Title="AbsoluteLayout"
+        ContentTemplate="{DataTemplate local:Absolute}"
+        Route="Absolute" />
         </Tab>
     </FlyoutItem>
 </Shell>
